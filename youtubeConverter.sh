@@ -40,7 +40,7 @@ then
     git pull https://github.com/ytdl-org/youtube-dl.git
     cd $baseDir
 else
-    mkdir -p ../youtube-dl_local
+    mkdir -p $libDir
     git clone https://github.com/ytdl-org/youtube-dl.git $libDir
 fi
 
