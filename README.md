@@ -1,9 +1,11 @@
-# Media Download and Convert made easy using youtube-dl library
-### Download media (mp4, m4a, mp3) from various sites using command line (eg Youtube, Facebook)
+# Media Download and Convert script
+
+## Wrapper script made using youtube-dl to make it easy for end-users
+#### Download media (mp4, m4a, mp3) from various sites using command line (eg Youtube, Facebook)
 
 ## Installation/Copying
 Just clone this repository as follows
-- go to a directory in your laptop
+- go to a directory in your laptop with required storage space
 - ```git clone https://github.com/getkub/youtubeConverter.git```
 
 
@@ -15,10 +17,15 @@ Call the wrapper script in below format
 ./mediaConverter.sh <mediaURL> <finalMediaFormat>
 ```
 
-eg
+eg Youtube video to MP4 video
+```
+./mediaConverter.sh https://www.youtube.com/watch?v=9pra4CM_njM mp4
+```
 
-```./mediaConverter.sh https://www.youtube.com/watch?v=9pra4CM_njM mp4```
-```./mediaConverter.sh https://www.facebook.com/MrBean/videos/988287084707700/ mp3```
+eg Facebook video to MP3
+```
+./mediaConverter.sh https://www.facebook.com/MrBean/videos/988287084707700/ mp3
+```
 
 
 ## Ensure
@@ -28,3 +35,8 @@ eg
 - Ensure python is installed in your system
 - Ensure internet connectivity to pull libraries
 - Cleanup your Converted Files directory often to keep filesystem space in-tact
+
+## Default settings
+- This script hardcodes certain values to make it easier for end-users
+- Default audio format is m4a
+- Default mp3 settings is 192kbps
