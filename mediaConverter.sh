@@ -4,19 +4,10 @@
 # Wrapper Script to
 # automatically pull library files
 # call python converter scripts
+# <scriptname>.sh <mediaURL> <fileFormat>
 # =========================== =========================== #
 
-regex='^(https?\:\/\/www\.)?(youtube\.com|youtu\.?be)\/.+$'
-
-if [[ $1 =~ $regex ]]
-then
-    echo "INFO: Valid URL detected: $1"
-    mediaURL=$1
-else
-    echo "ERROR: Youtube Link not valid. Exiting"
-    echo "ERROR: Script usage is: $0 <youtubeURL> <fileFormat>"
-    exit 100
-fi
+mediaURL=$1
 
 case "$2" in
     mp3)

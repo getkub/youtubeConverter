@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 import sys
 import re
+import json
 
 # Python Wrapper to Call Various conversion settings and to ensure URL is passed with error checks
 # DO NOT CALL THIS manually, but only via the wrapper shell script
@@ -39,16 +40,22 @@ def my_hook(d):
 
 if finalFormat in ['m4a']:
     formatString='bestaudio[ext=m4a]'
+    postprocessorsJSON=""
+
 if finalFormat in ['mp4']:
     formatString='bestvideo[ext=mp4]+bestaudio[ext=m4a]'
+    postprocessorsJSON=""
 
 if finalFormat in ['mp3']:
     formatString='bestaudio/best'
+    postprocessorsJSON=[{'key': 'FFmpegExtractAudio','preferredcodec': 'mp3','preferredquality': '192',}]
+
 ## Put Options String here somehow
 
 ydl_opts = {
     'format': formatString,
     'outtmpl': finalConvertedDir + '/%(title)s.%(ext)s',
+    'postprocessors': postprocessorsJSON,
     'logger': MyLogger(),
     'progress_hooks': [my_hook],
 }

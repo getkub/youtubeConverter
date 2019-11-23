@@ -1,5 +1,5 @@
-# Youtube Format Converter
-### Youtube to Various format converter and Wrapper
+# Media Download and Convert made easy using youtube-dl library
+### Download media (mp4, m4a, mp3) from various sites using command line (eg Youtube, Facebook)
 
 ## Installation/Copying
 Just clone this repository as follows
@@ -12,12 +12,13 @@ Just clone this repository as follows
 Call the wrapper script in below format
 
 ```
-./youtubeConverter.sh <youtubeURL> <format>
+./mediaConverter.sh <mediaURL> <finalMediaFormat>
 ```
 
 eg
 
-```./youtubeConverter.sh https://www.youtube.com/watch?v=9pra4CM_njM mp3```
+```./mediaConverter.sh https://www.youtube.com/watch?v=9pra4CM_njM mp4```
+```./mediaConverter.sh https://www.facebook.com/MrBean/videos/988287084707700/ mp3```
 
 
 ## Ensure
@@ -27,6 +28,3 @@ eg
 - Ensure python is installed in your system
 - Ensure internet connectivity to pull libraries
 - Cleanup your Converted Files directory often to keep filesystem space in-tact
-
-
-
