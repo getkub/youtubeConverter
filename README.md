@@ -40,3 +40,4 @@ eg Facebook video to MP3
 - This script hardcodes certain values to make it easier for end-users
 - Default audio format is m4a
 - Default mp3 settings is 192kbps
+- Downloads final media into "../convertedFiles" directory (i.e. Creates directory above your parent directory)
