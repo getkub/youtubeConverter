@@ -1,4 +1,4 @@
-# Media Download and Convert script
+# Media Download and Convert script for MAC & Linux
 
 ## Wrapper script made using youtube-dl to make it easy for end-users
 #### Download media (mp4, m4a, mp3) from various sites using command line (eg Youtube, Facebook)
@@ -31,7 +31,7 @@ eg Facebook video to MP3
 ## Ensure
 - You have enough space in your filesystem where you copy this repository
 - Ensure the parent directory is writable
-- Ensure this is run in macos OR Linux
+- Ensure this is run in *macos* OR *Linux*
 - Ensure python is installed in your system
 - Ensure internet connectivity to pull libraries
 - Cleanup your Converted Files directory often to keep filesystem space in-tact
