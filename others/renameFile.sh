@@ -25,7 +25,7 @@ done
 IFS="$OIFS"
 }
 
-# Pass each fileFilters to rename function
+# Pass each fileFilters to rename function to cater for various formats
 for fileFilter in $fileFilters
 do
     rename_file_extension $fileFilter
