@@ -6,7 +6,9 @@
 ## Installation/Copying
 Just clone this repository as follows
 - go to a directory in your laptop with required storage space
-- ```git clone https://github.com/getkub/youtubeConverter.git```
+- Install HomeBrew if NOT already installed for MACOS
+- Ensure FFMPEG library present by Running ```brew install ffmpeg``` OR ```sudo apt-get install ffmpeg``` in respective OS
+- Then clone this repository: ```git clone https://github.com/getkub/youtubeConverter.git```
 
 
 ## Running and Execution

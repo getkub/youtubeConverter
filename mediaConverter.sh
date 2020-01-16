@@ -8,6 +8,12 @@
 # =========================== =========================== #
 
 mediaURL=$1
+if [ $# -eq 0 ]
+  then
+    echo "No Input URL specified. Quitting.."
+    echo "Expected running of script => $0 \"<mediaURL>\" <outputMediaFormat>"
+    exit 100
+fi
 
 case "$2" in
     mp3)
