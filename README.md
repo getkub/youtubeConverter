@@ -16,17 +16,17 @@ Just clone this repository as follows
 Call the wrapper script in below format
 
 ```
-./mediaConverter.sh <mediaURL> <finalMediaFormat>
+./mediaConverter.sh "<mediaURL>" <finalMediaFormat>
 ```
 
 eg Youtube video to MP4 video
 ```
-./mediaConverter.sh https://www.youtube.com/watch?v=9pra4CM_njM mp4
+./mediaConverter.sh "https://www.youtube.com/watch?v=9pra4CM_njM" mp4
 ```
 
 eg Facebook video to MP3
 ```
-./mediaConverter.sh https://www.facebook.com/MrBean/videos/988287084707700/ mp3
+./mediaConverter.sh "https://www.facebook.com/MrBean/videos/988287084707700/" mp3
 ```
 
 
