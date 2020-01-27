@@ -1,0 +1,8 @@
+#Format of defining is  (/regex/, sub)
+#eg: (/[a-z]/,_)
+#(/(\s+|\)|\()/,"_") => not working for some reason :( . ONLY character is picked up!!
+# Below regex: To avoid spaces & brackets
+(/ |\(|\)/,"_")
+(/(\x27|\x22)/,"")
+#Multiple underscores to single underscore
+(/[_]+/,_)
