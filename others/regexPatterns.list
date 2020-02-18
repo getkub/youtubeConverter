@@ -5,4 +5,4 @@
 (/ |\(|\)/,"_")
 (/(\x27|\x22)/,"")
 #Multiple underscores to single underscore
-(/[_]+/,_)
+(/__+/,_)

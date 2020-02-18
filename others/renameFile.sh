@@ -15,19 +15,19 @@ rename_file_extension()
 {
 OIFS="$IFS"
 IFS=$'\n'
-for i in `ls ${dirLocation}/*.${1} 2>/dev/null`
+for i in `ls -1 ${dirLocation}/*.${1} 2>/dev/null`
 do
     baseDir=$(dirname $i)
     filename=$(basename $i)
     newName=$filename
     #echo "Filename is: $newName"
-    for pattern in `cat ${patternsList}|egrep -v '^#'|egrep '^[[:space:]]*$'`
+    for pattern in `cat ${patternsList}|egrep -v '^#'|egrep -v '^[[:space:]]*$'`
     do
       echo "Applying Pattern $pattern => to $newName"
       newName=`echo $newName | awk "{gsub${pattern};}1" `
     done
     echo "Renaming $i ==> $newName"
-    # mv "${baseDir}/${filename}" ${baseDir}/${newName}
+    mv "${baseDir}/${filename}" ${baseDir}/${newName}
 done
 IFS="$OIFS"
 }
