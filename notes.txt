@@ -1,0 +1,10 @@
+# Read more in ../archive/*README.md
+
+url="something"
+youtube-dl --list-formats $url
+
+# get the list suited
+youtube-dl -f <suited_name> $url
+
+youtube-dl -f bestvideo+bestaudio $url
+

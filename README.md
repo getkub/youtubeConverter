@@ -1,3 +1,6 @@
+# This script won't work anymore due to below
+https://www.bleepingcomputer.com/news/software/angry-youtube-dl-users-flood-github-with-new-repos-after-takedown/
+
 # Media Download and Convert script for MAC & Linux
 
 ## Wrapper script made using youtube-dl to make it easy for end-users
