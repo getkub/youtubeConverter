@@ -8,3 +8,5 @@ youtube-dl -f <suited_name> $url
 
 youtube-dl -f bestvideo+bestaudio $url
 
+youtube-dl -x --audio-format mp3 --prefer-ffmpeg $url
+
